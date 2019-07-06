@@ -62,8 +62,21 @@
 	</div>
 
 
-<script type="text/javascript">
+<script type="text/javascript" >
 	// your solution here
+ 
+$(document).ready(()=> {
+  
+  $('.bg-purple').on('click',()=>{$('.bg-purple').hide();});
+  $('.bg-green').on('click',()=>{
+    $('.bg-green, .bg-blue').show();
+  });
+  
+  $('.bg-orange, .p2-border').on('click',()=>{$('.bg-orange, .p2-border').show();});
+  $('#gradient-circle').on('mouseover',()=>{$('#gradient-circle').hide();});
+  $('.btn').on('click',()=>{$('.p2-circle').show();});
+  
+});  
 
 </script>
 </body>
