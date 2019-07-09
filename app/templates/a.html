@@ -69,10 +69,13 @@ $(document).ready(()=> {
   
   $('.bg-purple').on('click',()=>{$('.bg-purple').hide();});
   $('.bg-green').on('click',()=>{
-    $('.bg-green, .bg-blue').show();
+    $('.bg-green, .bg-blue').hide();
   });
   
-  $('.bg-orange, .p2-border').on('click',()=>{$('.bg-orange, .p2-border').show();});
+  $('.bg-orange.p2-border').on('click',()=>{
+    $('.bg-orange.p2-border').hide();
+  
+  });//TODO
   $('#gradient-circle').on('mouseover',()=>{$('#gradient-circle').hide();});
   $('.btn').on('click',()=>{$('.p2-circle').show();});
   
